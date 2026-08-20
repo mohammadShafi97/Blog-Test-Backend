@@ -40,7 +40,10 @@ app.use(
     origin: (origin, callback) => {
       if (!origin) return callback(null, true);
 
-      const allowedOrigins = ["http://localhost:5173"];
+      const allowedOrigins = [
+        "http://localhost:5173",
+        "https://blogshafifrontend.netlify.app",
+      ];
 
       if (allowedOrigins.includes(origin)) {
         return callback(null, true);

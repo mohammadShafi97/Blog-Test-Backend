@@ -261,3 +261,13 @@ then to use or access these variable use
 process.env.MONGODB_URL or process.env.SECRETKEY .......
 
 and then create a .gitignore file and add the names of files and folders that you do not want to push to github or cloud. eg(node modules, .env)
+
+# To Push the files to github.
+
+1. First go to the terminal containing the frontend or backend
+2. git init (for first time only)
+3. git add .
+4. git commit -m "message you want to type"
+5. git branch -M main (first time only)
+6. git remote add origin url..........................(first time only)
+7. git push -u origin main
